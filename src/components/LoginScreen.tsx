@@ -19,7 +19,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, loading }) =>
               <Mail className="w-8 h-8 text-white" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Gmail AI Assistant</h1>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Gmail AI Assistant</h2>
           <p className="text-gray-600">Transform your email experience with AI-powered insights</p>
         </div>
 
