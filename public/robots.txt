@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gmail-agent-dusky.vercel.app/sitemap.xml
