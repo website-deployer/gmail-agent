@@ -41,7 +41,6 @@ class OpenRouterService {
       throw new Error('OpenRouter API key is not configured. Please create a .env file with VITE_OPENROUTER_API_KEY=your_actual_api_key');
     }
 
-    console.log('OpenRouter API Key available:', !!OPENROUTER_API_KEY);
     console.log('Making request to OpenRouter API...');
 
     for (let attempt = 0; attempt < retries; attempt++) {
@@ -55,7 +54,7 @@ class OpenRouterService {
             'X-Title': 'Gmail AI Assistant'
           },
           body: JSON.stringify({
-            model: attempt === 0 ? 'anthropic/claude-3-haiku' : 'openai/gpt-3.5-turbo',
+            model: attempt === 0 ? 'deepseek/deepseek-r1-0528-qwen3-8b:free' : 'deepseek/deepseek-r1-0528-qwen3-8b:free',
             messages: [
               {
                 role: 'system',
